@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="הצגת מאכל"
+        android:textSize="34sp"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="55dp" />
 
@@ -33,6 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="חזור"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="549dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="651dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

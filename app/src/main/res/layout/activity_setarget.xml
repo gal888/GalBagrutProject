@@ -6,11 +6,12 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
         android:text="הגדר יעד קלורי יומי"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="50dp" />
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="44dp" />
 
     <EditText
         android:id="@+id/editTextText10"
@@ -24,11 +25,11 @@
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="67dp"
         android:text="הגדר"
         tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="244dp" />
+        tools:layout_editor_absoluteY="225dp" />
 
     <Button
         android:id="@+id/button16"
@@ -36,5 +37,5 @@
         android:layout_height="wrap_content"
         android:text="חזור"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="451dp" />
+        tools:layout_editor_absoluteY="641dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
