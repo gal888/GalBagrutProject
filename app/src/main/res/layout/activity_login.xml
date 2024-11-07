@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#00116F"
+        android:text="Log in"
+        android:textColorLink="#7A6262"
+        app:strokeColor="#FAB0B0"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="131dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#051468"
+        android:text="Sign up"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
