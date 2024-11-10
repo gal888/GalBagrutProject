@@ -1,42 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="127dp"
-        android:layout_height="35dp"
-        android:text="הוספת מזון"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_width="189dp"
+        android:layout_height="59dp"
+        android:text="Add food"
+        android:textColor="#F6F6F6"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
 
     <EditText
         android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
         android:ems="10"
+        android:hint="Enter name"
         android:inputType="text"
-        android:text="הכנס שם"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
 
     <EditText
         android:id="@+id/editTextText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Enter amount"
         android:inputType="text"
-        android:text="הכנס כמות"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="296dp" />
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="248dp" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="הוספה"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="511dp" />
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0F128C"
+        android:text="Add"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#0B1C7A"
+        android:text="Return"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="640dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

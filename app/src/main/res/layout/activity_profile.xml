@@ -2,38 +2,45 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="פרופיל"
-        android:textSize="24sp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="36dp" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="הגדר יעד קלורי יומי"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="492dp" />
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#10228A"
+        android:text="Set calorie target"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="408dp" />
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="123dp"
-        android:layout_height="50dp"
-        android:text="חזור"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:layout_width="142dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#122385"
+        android:text="Return"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="646dp" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="126dp"
-        android:layout_height="17dp"
-        android:text="שם מלא"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:text="Name"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="129dp" />
 
@@ -41,15 +48,17 @@
         android:id="@+id/textView13"
         android:layout_width="145dp"
         android:layout_height="42dp"
-        android:text="גיל"
+        android:text="Age"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="200dp" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="135dp"
-        android:layout_height="36dp"
-        android:text="יעד קלורי יומי"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="392dp" />
+        android:layout_width="222dp"
+        android:layout_height="52dp"
+        android:text="Daily calorie target"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="339dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

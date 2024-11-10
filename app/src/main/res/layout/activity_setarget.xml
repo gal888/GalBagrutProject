@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="354dp"
         android:layout_height="55dp"
-        android:text="הגדר יעד קלורי יומי"
+        android:text="Set calorie target"
         android:textSize="34sp"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="44dp" />
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="יעד קלורי"
+        android:text="Daily calorie target"
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="132dp" />
 
@@ -27,15 +28,17 @@
         android:id="@+id/button15"
         android:layout_width="115dp"
         android:layout_height="67dp"
-        android:text="הגדר"
+        android:backgroundTint="#112699"
+        android:text="Set"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="225dp" />
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="חזור"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="641dp" />
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0F207A"
+        android:text="Return"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="639dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

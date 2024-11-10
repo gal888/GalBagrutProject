@@ -2,16 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/bg"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="הרשמה"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="40dp" />
+        android:fontFamily="@font/abril_fatface"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -19,7 +22,7 @@
         android:layout_height="39dp"
         android:ems="10"
         android:inputType="text"
-        android:text="שם"
+        android:text="name"
         tools:layout_editor_absoluteX="224dp"
         tools:layout_editor_absoluteY="97dp" />
 
@@ -29,7 +32,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="שם משפחה"
+        android:text="last name"
         tools:layout_editor_absoluteX="2dp"
         tools:layout_editor_absoluteY="87dp" />
 
@@ -46,7 +49,8 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="בת"
+        android:backgroundTint="#102285"
+        android:text="girl"
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="364dp" />
 
@@ -54,17 +58,21 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="בן"
+        android:backgroundTint="#112594"
+        android:text="boy"
         tools:layout_editor_absoluteX="273dp"
         tools:layout_editor_absoluteY="363dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="96dp"
-        android:layout_height="34dp"
-        android:text="מין"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="275dp" />
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:scrollbarSize="24sp"
+        android:text="Gender"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="278dp" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -72,7 +80,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="צור שם משתמש"
+        android:text="Create user name"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="461dp" />
 
@@ -82,16 +90,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="צור סיסמא"
+        android:text="Create password"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="528dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="צור משתמש"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="618dp" />
+        android:layout_width="156dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#0E2189"
+        android:text="Create user"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="643dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

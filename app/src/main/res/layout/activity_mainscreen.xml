@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/bg"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button7"
         android:layout_width="197dp"
         android:layout_height="64dp"
+        android:backgroundTint="#152CA8"
         android:text="Profile"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="134dp" />
@@ -17,6 +18,7 @@
         android:id="@+id/button8"
         android:layout_width="198dp"
         android:layout_height="64dp"
+        android:backgroundTint="#152CA9"
         android:text="Find food"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="236dp" />
@@ -25,6 +27,7 @@
         android:id="@+id/button9"
         android:layout_width="199dp"
         android:layout_height="63dp"
+        android:backgroundTint="#11269B"
         android:text="Add calorie"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="334dp" />
@@ -34,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Main screen"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="25dp" />
