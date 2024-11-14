@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/bg"
@@ -9,33 +10,46 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="הצגת מאכל"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="55dp" />
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="show food "
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="מרכיבים וכמות בגרם"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="193dp" />
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:text="Ingredients and amount in grams"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView17"
+        android
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ערכים תזונתיים"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="292dp" />
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="56dp"
+        android:text="nutritional values"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="134dp"
         android:layout_height="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="316dp"
         android:backgroundTint="#0C1E80"
         android:text="Return"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="639dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 </androidx.constraintlayout.widget.ConstraintLayout>

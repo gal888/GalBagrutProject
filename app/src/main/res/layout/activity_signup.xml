@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/bg"
@@ -9,98 +10,118 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/abril_fatface"
         android:text="Sign up"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="171dp"
         android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="27dp"
         android:ems="10"
         android:inputType="text"
         android:text="name"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintStart_toEndOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="text"
         android:text="last name"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="262dp"
         android:layout_height="61dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="149dp"
         android:backgroundTint="#102285"
         android:text="girl"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="148dp"
         android:backgroundTint="#112594"
         android:text="boy"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="106dp"
         android:layout_height="36dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="63dp"
         android:scrollbarSize="24sp"
         android:text="Gender"
         android:textColor="#000000"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <EditText
         android:id="@+id/editTextText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="text"
         android:text="Create user name"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="461dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <EditText
         android:id="@+id/editTextText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:inputType="text"
         android:text="Create password"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="528dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="156dp"
         android:layout_height="59dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="70dp"
         android:backgroundTint="#0E2189"
         android:text="Create user"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="643dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

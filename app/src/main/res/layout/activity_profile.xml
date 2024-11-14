@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/bg"
@@ -9,56 +10,68 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/abril_fatface"
         android:text="Profile"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="170dp"
         android:layout_height="60dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="17dp"
         android:backgroundTint="#10228A"
         android:text="Set calorie target"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="408dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="142dp"
         android:layout_height="60dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="178dp"
         android:backgroundTint="#122385"
         android:text="Return"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="646dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="140dp"
         android:layout_height="38dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="36dp"
         android:text="Name"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="129dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="145dp"
         android:layout_height="42dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="41dp"
         android:text="Age"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="222dp"
         android:layout_height="52dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="99dp"
         android:text="Daily calorie target"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="339dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,28 +37,41 @@
         android:id="@+id/editTextText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="Enter amount"
         android:inputType="text"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="148dp"
         android:layout_height="60dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#0F128C"
         android:text="Add"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="323dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
 
     <Button
         android:id="@+id/button17"
         android:layout_width="157dp"
         android:layout_height="57dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="257dp"
         android:backgroundTint="#0B1C7A"
         android:text="Return"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="640dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="463dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

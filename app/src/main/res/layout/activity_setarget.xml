@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/bg"
@@ -9,36 +10,46 @@
         android:id="@+id/textView18"
         android:layout_width="354dp"
         android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/abril_fatface"
         android:text="Set calorie target"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="33dp"
         android:ems="10"
         android:inputType="text"
         android:text="Daily calorie target"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="115dp"
         android:layout_height="67dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#112699"
         android:text="Set"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
 
     <Button
         android:id="@+id/button16"
         android:layout_width="140dp"
         android:layout_height="60dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="347dp"
         android:backgroundTint="#0F207A"
         android:text="Return"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="639dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
 </androidx.constraintlayout.widget.ConstraintLayout>

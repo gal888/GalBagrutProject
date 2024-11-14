@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159314068322",
+    "project_id": "fir-realgal",
+    "storage_bucket": "fir-realgal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159314068322:android:8b64de25cb2f312afde23b",
+        "android_client_info": {
+          "package_name": "com.example.galbagrutproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZY9ft6-HXdnEGEPfz2D2iYxq_Silum4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
