@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/bg"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
     <TextView
@@ -13,64 +14,72 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/abril_fatface"
-        android:text="Welcome"
+        android:text="Create Account"
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/editTextEmail"
         android:layout_width="410dp"
         android:layout_height="48dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="98dp"
         android:ems="10"
-        android:hint="username"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Username"
         android:inputType="text"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="411dp"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="130dp"
+        android:id="@+id/btnSignUp"
+        android:layout_width="151dp"
         android:layout_height="69dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="165dp"
+        android:layout_marginStart="128dp"
         android:backgroundTint="#00116F"
-        android:text="Log in"
+        android:text="Create user"
         android:textColorLink="#7A6262"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
         app:strokeColor="#FAB0B0" />
 
     <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="131dp"
+        android:id="@+id/btnLoginRedirect"
+        android:layout_width="153dp"
         android:layout_height="71dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#051468"
-        android:text="Sign up"
+        android:text="back to Log In"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+</LinearLayout>
