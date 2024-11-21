@@ -1,85 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="368dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="27dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/abril_fatface"
         android:text="Create Account"
         android:textColor="#FFFFFF"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="410dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="98dp"
-        android:ems="10"
+        android:layout_marginTop="88dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/editTextUsername"
-        android:layout_width="410dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Username"
+        android:hint="Create Username"
         android:inputType="text"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Password"
+        android:hint="Create Password"
         android:inputType="textPassword"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="151dp"
-        android:layout_height="69dp"
+        android:layout_width="139dp"
+        android:layout_height="71dp"
         android:layout_marginStart="128dp"
         android:backgroundTint="#00116F"
         android:text="Create user"
-        android:textColorLink="#7A6262"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        app:strokeColor="#FAB0B0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
         android:id="@+id/btnLoginRedirect"
-        android:layout_width="153dp"
+        android:layout_width="wrap_content"
         android:layout_height="71dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#051468"
         android:text="back to Log In"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
-</LinearLayout>
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="52dp"
+        android:padding="10dp"
+        android:text="Pick Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginRedirect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
