@@ -10,6 +10,9 @@ public class User {
         this.username = username;
     }
 
+    public User(String email, String username, String dateOfBirth) {
+    }
+
     public String getEmail() {
         return email;
     }
