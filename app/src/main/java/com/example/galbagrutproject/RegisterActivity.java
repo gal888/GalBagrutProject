@@ -24,7 +24,7 @@ import java.util.Calendar;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editTextEmail, editTextUsername, editTextPassword;
-    private Button btnSignUp, btnLoginRedirect;
+    private Button btnSignUp, btnLoginRedirect,btnPickDate;
     private FirebaseAuth mAuth;
     private FirebaseFirestore firestore;
     private TextView selectedDateTextView;
